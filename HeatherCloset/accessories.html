@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>HNS Accessory Inventory</title>
+ <style>
+   img {
+  border: 3px solid #ddd; /* Gray border */
+  border-radius: 20px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+  width: 150px; /* Set a small width */
+}
+
+/* Add a hover effect (blue shadow) */
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+h1 {
+  text-align: center;
+}
+
+#myBtnContainer {
+  text-align: center;
+}
+ </style>
+
+  </head>
+  <body>
+    <div class="main">
+
+      <h1><a href="/index.html">HNS' Accessory Inventory</a></h1>
+            
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('hat')">Hats</button>
+        <button class="btn" onclick="filterSelection('purse')">Purses</button>
+      </div>
+  
+  <!-- <div class="flex-container"> -->
+
+  <div class="row">
+
+      <div class="column hat">
+        <div class="content">
+          <a href="images/Accessories/accessory_1.jpg">
+          <img src="images/Accessories/accessory_sm_1.jpg" style="width:100%"></a>
+          <h4>Hat</h4>
+          <p>Size = medium / Bin#: 9</p>
+        </div>
+      </div>  
+      <div class="column hat">
+        <div class="content">
+          <a href="images/Accessories/accessory_3.jpg">
+          <img src="images/Accessories/accessory_sm_3.jpg" style="width:100%"></a>
+          <h4>Hat</h4>
+          <p>Size = medium / Bin#: 9</p>
+        </div>
+      </div> 
+
+      <div class="column purse">
+        <div class="content">
+          <a href="images/Accessories/accessory_2.jpg">
+          <img src="images/Accessories/accessory_sm_2.jpg" style="width:100%"></a>
+          <h4>Hat</h4>
+          <p>Size = medium / Bin#: 9</p>
+        </div>
+      </div> 
+      <div class="column purse">
+        <div class="content">
+          <a href="images/Accessories/accessory_4.jpg">
+          <img src="images/Accessories/accessory_sm_4.jpg" style="width:100%"></a>
+          <h4>Hat</h4>
+          <p>Size = medium / Bin#: 9</p>
+        </div>
+      </div> 
+      <div class="column purse">
+        <div class="content">
+          <a href="images/Accessories/accessory_5.jpg">
+          <img src="images/Accessories/accessory_sm_5.jpg" style="width:100%"></a>
+          <h4>Hat</h4>
+          <p>Size = medium / Bin#: 9</p>
+        </div>
+      </div> 
+      <div class="column purse">
+        <div class="content">
+          <a href="images/Accessories/accessory_6.jpg">
+          <img src="images/Accessories/accessory_sm_6.jpg" style="width:100%"></a>
+          <h4>Hat</h4>
+          <p>Size = medium / Bin#: 9</p>
+        </div>
+      </div> 
+     
+  
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+  </html>

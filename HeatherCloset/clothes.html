@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>HNS Clothes Inventory</title>
+ <style>
+   img {
+  border: 3px solid #ddd; /* Gray border */
+  border-radius: 20px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+  width: 150px; /* Set a small width */
+}
+
+/* Add a hover effect (blue shadow) */
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+h1 {
+  text-align: center;
+}
+
+#myBtnContainer {
+  text-align: center;
+}
+ </style>
+
+  </head>
+  <body>
+    <div class="main">
+
+      <h1><a href="/index.html">HNS' Clothes Inventory</a></h1>
+            
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('blouse')"> Blouses</button>
+        <button class="btn" onclick="filterSelection('skirt')"> Skirts</button>
+        <button class="btn" onclick="filterSelection('dress')">Dresses</button>
+        <button class="btn" onclick="filterSelection('pant')">Pants</button>
+        <button class="btn" onclick="filterSelection('short')">Shorts</button>
+        <button class="btn" onclick="filterSelection('sweater')">Sweaters</button>
+        <button class="btn" onclick="filterSelection('coat')">Coats</button>
+      </div>
+  
+  <!-- <div class="flex-container"> -->
+
+  <div class="row">
+
+      <div class="column blouse">
+        <div class="content">
+          <a href="images/blouses/blouse_1.jpg">
+          <img src="images/blouses/blouse_sm_1.jpg" style="width:100%"></a>
+          <h4>Mexican Blouse</h4>
+          <p>Size = medium / Bin#: 4</p>
+        </div>
+      </div>  
+      <div class="column blouse">
+        <div class="content">
+          <a href="images/blouses/blouse_2.jpg">
+          <img src="images/blouses/blouse_sm_2.jpg" style="width:100%"></a>
+          <h4>Mexican Blouse</h4>
+          <p>Size = medium / Bin#: 4</p>
+        </div>
+      </div>
+      <div class="column blouse">
+        <div class="content">
+          <a href="images/blouses/blouse_3.jpg">
+          <img src="images/blouses/blouse_sm_3.jpg" style="width:100%"></a>
+          <h4>Mexican Blouse</h4>
+          <p>Size = medium / Bin#: 4</p>
+        </div>
+      </div>
+      <div class="column blouse">
+        <div class="content">
+          <a href="images/blouses/blouse_4.jpg">
+          <img src="images/blouses/blouse_sm_4.jpg" style="width:100%"></a>
+          <h4>Mexican Blouse</h4>
+          <p>Size = medium / Bin#: 4</p>
+        </div>
+      </div>
+      <div class="column blouse">
+        <div class="content">
+          <a href="images/blouses/blouse_5.jpg">
+          <img src="images/blouses/blouse_sm_5.jpg" style="width:100%"></a>
+          <h4>Mexican Blouse</h4>
+          <p>Size = medium / Bin#: 4</p>
+        </div>
+      </div>
+      <div class="column blouse">
+        <div class="content">
+          <a href="images/blouses/blouse_6.jpg">
+          <img src="images/blouses/blouse_sm_6.jpg" style="width:100%"></a>
+          <h4>Mexican Blouse</h4>
+          <p>Size = medium / Bin#: 4</p>
+        </div>
+      </div>
+      <div class="column blouse">
+        <div class="content">
+          <a href="images/blouses/blouse_7.jpg">
+          <img src="images/blouses/blouse_sm_7.jpg" style="width:100%"></a>
+          <h4>Mexican Blouse</h4>
+          <p>Size = medium / Bin#: 4</p>
+        </div>
+      </div>
+      <div class="column blouse">
+        <div class="content">
+          <a href="images/blouses/blouse_8.jpg">
+          <img src="images/blouses/blouse_sm_8.jpg" style="width:100%"></a>
+          <h4>Mexican Blouse</h4>
+          <p>Size = medium / Bin#: 4</p>
+        </div>
+      </div>
+      <div class="column blouse">
+        <div class="content">
+          <a href="images/blouses/blouse_9.jpg">
+          <img src="images/blouses/blouse_sm_9.jpg" style="width:100%"></a>
+          <h4>Mexican Blouse</h4>
+          <p>Size = medium / Bin#: 4</p>
+        </div>
+      </div>
+      <div class="column blouse">
+        <div class="content">
+          <a href="images/blouses/blouse_10.jpg">
+          <img src="images/blouses/blouse_sm_10.jpg" style="width:100%"></a>
+          <h4>Mexican Blouse</h4>
+          <p>Size = medium / Bin#: 4</p>
+        </div>
+      </div>
+
+      <div class="column skirt">
+        <div class="content">
+          <a href="images/skirts/skirt_1.jpg">
+          <img src="images/skirts/skirt_sm_1.jpg" style="width:100%"></a>
+          <h4>Mexican Skirt</h4>
+          <p>Size = medium / Bin#: 3</p>
+        </div>
+      </div>
+      <div class="column skirt">
+        <div class="content">
+          <a href="images/skirts/skirt_2.jpg">
+          <img src="images/skirts/skirt_sm_2.jpg" style="width:100%"></a>
+          <h4>Mexican Skirt</h4>
+          <p>Size = medium / Bin#: 3</p>
+        </div>
+      </div>
+      <div class="column skirt">
+        <div class="content">
+          <a href="images/skirts/skirt_3.jpg">
+          <img src="images/skirts/skirt_sm_3.jpg" style="width:100%"></a>
+          <h4>Mexican Skirt</h4>
+          <p>Size = medium / Bin#: 3</p>
+        </div>
+      </div>
+      <div class="column skirt">
+        <div class="content">
+          <a href="images/skirts/skirt_4.jpg">
+          <img src="images/skirts/skirt_sm_4.jpg" style="width:100%"></a>
+          <h4>Mexican Skirt</h4>
+          <p>Size = medium / Bin#: 3</p>
+        </div>
+      </div>
+      <div class="column skirt">
+        <div class="content">
+          <a href="images/skirts/skirt_5.jpg">
+          <img src="images/skirts/skirt_sm_5.jpg" style="width:100%"></a>
+          <h4>Mexican Skirt</h4>
+          <p>Size = medium / Bin#: 3</p>
+        </div>
+      </div>
+      <div class="column skirt">
+        <div class="content">
+          <a href="images/skirts/skirt_6.jpg">
+          <img src="images/skirts/skirt_sm_6.jpg" style="width:100%"></a>
+          <h4>Mexican Skirt</h4>
+          <p>Size = medium / Bin#: 3</p>
+        </div>
+      </div>
+      <div class="column skirt">
+        <div class="content">
+          <a href="images/skirts/skirt_7.jpg">
+          <img src="images/skirts/skirt_sm_7.jpg" style="width:100%"></a>
+          <h4>Mexican Skirt</h4>
+          <p>Size = medium / Bin#: 3</p>
+        </div>
+      </div>
+      <div class="column skirt">
+        <div class="content">
+          <a href="images/skirts/skirt_8.jpg">
+          <img src="images/skirts/skirt_sm_8.jpg" style="width:100%"></a>
+          <h4>Mexican Skirt</h4>
+          <p>Size = medium / Bin#: 3</p>
+        </div>
+      </div>
+      <div class="column skirt">
+        <div class="content">
+          <a href="images/skirts/skirt_9.jpg">
+          <img src="images/skirts/skirt_sm_9.jpg" style="width:100%"></a>
+          <h4>Mexican Skirt</h4>
+          <p>Size = medium / Bin#: 3</p>
+        </div>
+      </div>
+      <div class="column skirt">
+        <div class="content">
+          <a href="images/skirts/skirt_10.jpg">
+          <img src="images/skirts/skirt_sm_10.jpg" style="width:100%"></a>
+          <h4>Mexican Skirt</h4>
+          <p>Size = medium / Bin#: 3</p>
+        </div>
+      </div>
+
+      <div class="column dress">
+        <div class="content">
+          <a href="images/dresses/dress_1.jpg">
+          <img src="images/dresses/dress_sm_1.jpg" style="width:100%"></a>
+          <h4>Dress</h4>
+          <p>Size = medium / Bin#: 3</p>
+        </div>
+      </div>
+      <div class="column dress">
+        <div class="content">
+          <a href="images/dresses/dress_2.jpg">
+          <img src="images/dresses/dress_sm_2.jpg" style="width:100%"></a>
+          <h4>Dress</h4>
+          <p>Size = medium / Bin#: 3</p>
+        </div>
+      </div>
+      <div class="column dress">
+        <div class="content">
+          <a href="images/dresses/dress_3.jpg">
+          <img src="images/dresses/dress_sm_3.jpg" style="width:100%"></a>
+          <h4>Dress</h4>
+          <p>Size = medium / Bin#: 3</p>
+        </div>
+      </div>
+      <div class="column dress">
+        <div class="content">
+          <a href="images/dresses/dress_4.jpg">
+          <img src="images/dresses/dress_sm_4.jpg" style="width:100%"></a>
+          <h4>Dress</h4>
+          <p>Size = medium / Bin#: 3</p>
+        </div>
+      </div>
+      <div class="column dress">
+        <div class="content">
+          <a href="images/dresses/dress_5.jpg">
+          <img src="images/dresses/dress_sm_5.jpg" style="width:100%"></a>
+          <h4>Dress</h4>
+          <p>Size = medium / Bin#: 3</p>
+        </div>
+      </div>
+      <div class="column dress">
+        <div class="content">
+          <a href="images/dresses/dress_6.jpg">
+          <img src="images/dresses/dress_sm_6.jpg" style="width:100%"></a>
+          <h4>Dress</h4>
+          <p>Size = medium / Bin#: 3</p>
+        </div>
+      </div>
+      <div class="column dress">
+        <div class="content">
+          <a href="images/dresses/dress_7.jpg">
+          <img src="images/dresses/dress_sm_7.jpg" style="width:100%"></a>
+          <h4>Dress</h4>
+          <p>Size = medium / Bin#: 3</p>
+        </div>
+      </div>
+      <div class="column dress">
+        <div class="content">
+          <a href="images/dresses/dress_8.jpg">
+          <img src="images/dresses/dress_sm_8.jpg" style="width:100%"></a>
+          <h4>Dress</h4>
+          <p>Size = medium / Bin#: 3</p>
+        </div>
+      </div>
+      <div class="column dress">
+        <div class="content">
+          <a href="images/dresses/dress_9.jpg">
+          <img src="images/dresses/dress_sm_9.jpg" style="width:100%"></a>
+          <h4>Dress</h4>
+          <p>Size = medium / Bin#: 3</p>
+        </div>
+      </div>
+      <div class="column dress">
+        <div class="content">
+          <a href="images/dresses/dress_10.jpg">
+          <img src="images/dresses/dress_sm_10.jpg" style="width:100%"></a>
+          <h4>Dress</h4>
+          <p>Size = medium / Bin#: 3</p>
+        </div>
+      </div>
+
+      <div class="column pant">
+        <div class="content">
+          <a target="_blank" href="images/pants/pants_1.jpg">
+          <img src="images/pants/pants_sm_1.jpg" style="width:100%"></a>
+          <h4>Pants</h4>
+          <p>Size = medium / Bin#: 3</p>
+        </div>
+      </div>
+      <div class="column pant">
+        <div class="content">
+          <a target="_blank" href="images/pants/pants_2.jpg">
+          <img src="images/pants/pants_sm_2.jpg" style="width:100%"></a>
+          <h4>Pants</h4>
+          <p>Size = medium / Bin#: 3</p>
+        </div>
+      </div>
+      <div class="column pant">
+        <div class="content">
+          <a target="_blank" href="images/pants/pants_3.jpg">
+          <img src="images/pants/pants_sm_3.jpg" style="width:100%"></a>
+          <h4>Pants</h4>
+          <p>Size = medium / Bin#: 3</p>
+        </div>
+      </div>
+      <div class="column pant">
+        <div class="content">
+          <a target="_blank" href="images/pants/pants_4.jpg">
+          <img src="images/pants/pants_sm_4.jpg" style="width:100%"></a>
+          <h4>Pants</h4>
+          <p>Size = medium / Bin#: 3</p>
+        </div>
+      </div>
+
+      <div class="column short">
+        <div class="content">
+          <a href="images/Shorts/short_1.jpg">
+          <img src="images/shorts/short_sm_1.jpg" style="width:100%"></a>
+          <h4>Shorts</h4>
+          <p>Size = medium / Bin#: 3</p>
+        </div>
+      </div>
+      <div class="column short">
+        <div class="content">
+          <a href="images/Shorts/short_2.jpg">
+          <img src="images/shorts/short_sm_2.jpg" style="width:100%"></a>
+          <h4>Shorts</h4>
+          <p>Size = medium / Bin#: 3</p>
+        </div>
+      </div>
+      <div class="column short">
+        <div class="content">
+          <a href="images/shorts/short_3.jpg">
+          <img src="images/shorts/short_sm_3.jpg" style="width:100%"></a>
+          <h4>Shorts</h4>
+          <p>Size = medium / Bin#: 4</p>
+        </div>
+      </div>
+
+      <div class="column sweater">
+        <div class="content">
+          <a href="images/Sweaters/sweater_1.jpg">
+          <img src="images/Sweaters/sweater_sm_1.jpg" style="width:100%"></a>
+          <h4>Sweater</h4>
+          <p>Size = medium / Bin#: 4</p>
+        </div>
+      </div>
+      <div class="column sweater">
+        <div class="content">
+          <a href="images/Sweaters/sweater_2.jpg">
+          <img src="images/Sweaters/sweater_sm_2.jpg" style="width:100%"></a>
+          <h4>Sweater</h4>
+          <p>Size = medium / Bin#: 4</p>
+        </div>
+      </div>
+      <div class="column sweater">
+        <div class="content">
+          <a href="images/Sweaters/sweater_3.jpg">
+          <img src="images/Sweaters/sweater_sm_3.jpg" style="width:100%"></a>
+          <h4>Sweater</h4>
+          <p>Size = medium / Bin#: 4</p>
+        </div>
+      </div>
+      <div class="column sweater">
+        <div class="content">
+          <a href="images/Sweaters/sweater_4.jpg">
+          <img src="images/Sweaters/sweater_sm_4.jpg" style="width:100%"></a>
+          <h4>Sweater</h4>
+          <p>Size = medium / Bin#: 4</p>
+        </div>
+      </div>
+      <div class="column sweater">
+        <div class="content">
+          <a href="images/Sweaters/sweater_5.jpg">
+          <img src="images/Sweaters/sweater_sm_5.jpg" style="width:100%"></a>
+          <h4>Sweater</h4>
+          <p>Size = medium / Bin#: 4</p>
+        </div>
+      </div>
+
+      <div class="column coat">
+        <div class="content">
+          <a href="images/Coats/coat_1.jpg">
+          <img src="images/Coats/coat_sm_1.jpg" style="width:100%"></a>
+          <h4>Sweater</h4>
+          <p>Size = medium / Bin#: 4</p>
+        </div>
+      </div>
+      <div class="column coat">
+        <div class="content">
+          <a href="images/Coats/coat_2.jpg">
+          <img src="images/Coats/coat_sm_2.jpg" style="width:100%"></a>
+          <h4>Sweater</h4>
+          <p>Size = medium / Bin#: 4</p>
+        </div>
+      </div>
+      <div class="column coat">
+        <div class="content">
+          <a href="images/Coats/coat_3.jpg">
+          <img src="images/Coats/coat_sm_3.jpg" style="width:100%"></a>
+          <h4>Sweater</h4>
+          <p>Size = medium / Bin#: 4</p>
+        </div>
+      </div>
+      <div class="column coat">
+        <div class="content">
+          <a href="images/Coats/coat_4.jpg">
+          <img src="images/Coats/coat_sm_4.jpg" style="width:100%"></a>
+          <h4>Sweater</h4>
+          <p>Size = medium / Bin#: 4</p>
+        </div>
+      </div>
+      <div class="column coat">
+        <div class="content">
+          <a href="images/Coats/coat_5.jpg">
+          <img src="images/Coats/coat_sm_5.jpg" style="width:100%"></a>
+          <h4>Sweater</h4>
+          <p>Size = medium / Bin#: 4</p>
+        </div>
+      </div>
+       
+      
+    <!-- END GRID -->
+    </div>
+<!-- </div> -->
+  <script src="script.js"></script>
+
+  </body>
