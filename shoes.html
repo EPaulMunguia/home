@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <title>HNS Shoe Inventory</title>
+ <style>
+   img {
+  border: 3px solid #ddd; /* Gray border */
+  border-radius: 20px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+  width: 150px; /* Set a small width */
+}
+
+/* Add a hover effect (blue shadow) */
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+#heading {
+  text-align: center;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 8vw;
+  text-shadow: 4px 4px 4px #aaa;
+  vertical-align: top;
+}
+
+img.a {
+  border:0;
+  /* pointer-events: inherit; */
+  box-shadow: none;
+  width: 14%;
+  float: left;
+  padding: 10px 0px 0px 10px;
+}
+
+img.posh {
+  border:0;
+  pointer-events: none;
+  width: 14%;
+  float: right;
+}
+
+#myBtnContainer {
+  text-align: center;
+}
+ </style>
+
+  </head>
+  <body>
+    <div class="main">
+
+      <div id="heading">
+        <p><a href="index.html" ><img class="a" src="images/home/logo.png"></a>
+        HNS' Shoe Inventory</p>
+        </div>
+            
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('heel')"> Heels</button>
+        <button class="btn" onclick="filterSelection('flat')"> Flats</button>
+        <button class="btn" onclick="filterSelection('beach')">Beach</button>
+        <button class="btn" onclick="filterSelection('sneaker')">Sneakers</button>
+        <button class="btn" onclick="filterSelection('boot')">Boots</button>
+        <button class="btn" onclick="filterSelection('posh')">POSH</button>
+      </div>
+  
+  <!-- <div class="flex-container"> -->
+
+  <div class="row">
+
+      <div class="column heel">
+        <div class="content">
+          <a href="images/Shoes/shoe_1.jpg">
+          <img src="images/Shoes/shoe_sm_1.jpg" style="width:100%"></a>
+          <h4>Shoe (heel)</h4>
+          <p>Size = medium / Bin#: 6</p>
+        </div>
+      </div>  
+      <div class="column heel posh">
+        <div class="content">
+          <a href="images/Shoes/shoe_2.jpg">
+          <img src="images/Shoes/shoe_sm_2.jpg" style="width:100%"></a>
+          <h4>Shoe (heel) <img class="posh" src="images/icon.png"></h4>
+          <p>Size = medium / Bin#: 6</p>
+        </div>
+      </div>  
+      <div class="column heel posh">
+        <div class="content">
+          <a href="images/Shoes/shoe_11.jpg">
+          <img src="images/Shoes/shoe_sm_11.jpg" style="width:100%"></a>
+          <h4>Shoe (heel) <img class="posh" src="images/icon.png"></h4>
+          <p>Size = medium / Bin#: 6</p>
+        </div>
+      </div>
+      <div class="column heel">
+        <div class="content">
+          <a href="images/Shoes/shoe_12.jpg">
+          <img src="images/Shoes/shoe_sm_12.jpg" style="width:100%"></a>
+          <h4>Shoe (heel)</h4>
+          <p>Size = medium / Bin#: 6</p>
+        </div>
+      </div>  
+      <div class="column heel">
+        <div class="content">
+          <a href="images/Shoes/shoe_13.jpg">
+          <img src="images/Shoes/shoe_sm_13.jpg" style="width:100%"></a>
+          <h4>Shoe (heel)</h4>
+          <p>Size = medium / Bin#: 6</p>
+        </div>
+      </div>  
+      
+      <div class="column flat posh">
+        <div class="content">
+          <a href="images/Shoes/shoe_15.jpg">
+          <img src="images/Shoes/shoe_sm_15.jpg" style="width:100%"></a>
+          <h4>Shoe (flats) <img class="posh" src="images/icon.png"></h4>
+          <p>Size = medium / Bin#: 6</p>
+        </div>
+      </div>  
+      <div class="column flat">
+        <div class="content">
+          <a href="images/Shoes/shoe_16.jpg">
+          <img src="images/Shoes/shoe_sm_16.jpg" style="width:100%"></a>
+          <h4>Shoe (flats)</h4>
+          <p>Size = medium / Bin#: 6</p>
+        </div>
+      </div>  
+      <div class="column flat">
+        <div class="content">
+          <a href="images/Shoes/shoe_17.jpg">
+          <img src="images/Shoes/shoe_sm_17.jpg" style="width:100%"></a>
+          <h4>Shoe (flats)</h4>
+          <p>Size = medium / Bin#: 6</p>
+        </div>
+      </div>  
+
+      <div class="column beach">
+        <div class="content">
+          <a href="images/Shoes/shoe_3.jpg">
+          <img src="images/Shoes/shoe_sm_3.jpg" style="width:100%"></a>
+          <h4>Shoe (beach)</h4>
+          <p>Size = medium / Bin#: 6</p>
+        </div>
+      </div>
+      <div class="column beach posh">
+        <div class="content">
+          <a href="images/Shoes/shoe_5.jpg">
+          <img src="images/Shoes/shoe_sm_5.jpg" style="width:100%"></a>
+          <h4>Shoe (beach) <img class="posh" src="images/icon.png"></h4>
+          <p>Size = medium / Bin#: 6</p>
+        </div>
+      </div>  
+
+    <div class="column sneaker">
+      <div class="content">
+        <a href="images/Shoes/shoe_4.jpg">
+        <img src="images/Shoes/shoe_sm_4.jpg" style="width:100%"></a>
+        <h4>Shoe (sneaker)</h4>
+        <p>Size = medium / Bin#: 6</p>
+      </div>
+    </div>  
+    <div class="column sneaker">
+    <div class="content">
+      <a href="images/Shoes/shoe_6.jpg">
+      <img src="images/Shoes/shoe_sm_6.jpg" style="width:100%"></a>
+      <h4>Shoe (sneaker)</h4>
+      <p>Size = medium / Bin#: 6</p>
+    </div>
+  </div>  
+<div class="column sneaker">
+  <div class="content">
+    <a href="images/Shoes/shoe_7.jpg">
+    <img src="images/Shoes/shoe_sm_7.jpg" style="width:100%"></a>
+    <h4>Shoe (sneaker)</h4>
+    <p>Size = medium / Bin#: 6</p>
+  </div>
+</div>  
+
+<div class="column boot">
+  <div class="content">
+    <a href="images/Shoes/shoe_8.jpg">
+    <img src="images/Shoes/shoe_sm_8.jpg" style="width:100%"></a>
+    <h4>Shoe (boot)</h4>
+    <p>Size = medium / Bin#: 6</p>
+  </div>
+</div>  
+<div class="column boot">
+  <div class="content">
+    <a href="images/Shoes/shoe_9.jpg">
+    <img src="images/Shoes/shoe_sm_9.jpg" style="width:100%"></a>
+    <h4>Shoe (boot)</h4>
+    <p>Size = medium / Bin#: 6</p>
+  </div>
+</div>  
+<div class="column boot posh">
+  <div class="content">
+    <a href="images/Shoes/shoe_10.jpg">
+    <img src="images/Shoes/shoe_sm_10.jpg" style="width:100%"></a>
+    <h4>Shoe (boot) <img class="posh" src="images/icon.png"></h4>
+    <p>Size = medium / Bin#: 6</p>
+  </div>
+</div>  
+<div class="column boot">
+  <div class="content">
+    <a href="images/Shoes/shoe_8.jpg">
+    <img src="images/Shoes/shoe_sm_8.jpg" style="width:100%"></a>
+    <h4>Shoe (boot)</h4>
+    <p>Size = medium / Bin#: 6</p>
+  </div>
+</div>  
+<div class="column boot">
+  <div class="content">
+    <a href="images/Shoes/shoe_14.jpg">
+    <img src="images/Shoes/shoe_sm_14.jpg" style="width:100%"></a>
+    <h4>Shoe (boot)</h4>
+    <p>Size = medium / Bin#: 6</p>
+  </div>
+</div>  
+  
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+  </html>

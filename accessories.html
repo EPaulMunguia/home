@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <title>HNS Accessory Inventory</title>
+ <style>
+   img {
+  border: 3px solid #ddd; /* Gray border */
+  border-radius: 20px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+  width: 150px; /* Set a small width */
+}
+
+/* Add a hover effect (blue shadow) */
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+#heading {
+  text-align: center;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 8vw;
+  text-shadow: 4px 4px 4px #aaa;
+  vertical-align: top;
+}
+
+img.a {
+  border:0;
+  /* pointer-events: inherit; */
+  box-shadow: none;
+  width: 14%;
+  float: left;
+  padding: 10px 0px 0px 10px;
+}
+
+img.posh {
+  border:0;
+  pointer-events: none;
+  width: 14%;
+  float: right;
+}
+
+#myBtnContainer {
+  text-align: center;
+}
+ </style>
+
+  </head>
+  <body>
+    <div class="main">
+
+      <div id="heading">
+        <p><a href="index.html" ><img class="a" src="images/home/logo.png"></a>
+        HNS' Accessories Inventory</p>
+        </div>
+            
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('hat')">Hats</button>
+        <button class="btn" onclick="filterSelection('purse')">Purses</button>
+        <button class="btn" onclick="filterSelection('posh')">POSH</button>
+      </div>
+  
+  <!-- <div class="flex-container"> -->
+
+  <div class="row">
+
+      <div class="column hat posh">
+        <div class="content">
+          <a href="images/Accessories/accessory_1.jpg">
+          <img src="images/Accessories/accessory_sm_1.jpg" style="width:100%"></a>
+          <h4>Hat <img class="posh" src="images/icon.png"></h4>
+          <p>Size = medium / Bin#: 9</p>
+        </div>
+      </div>  
+      <div class="column hat">
+        <div class="content">
+          <a href="images/Accessories/accessory_3.jpg">
+          <img src="images/Accessories/accessory_sm_3.jpg" style="width:100%"></a>
+          <h4>Hat</h4>
+          <p>Size = medium / Bin#: 9</p>
+        </div>
+      </div> 
+
+      <div class="column purse posh">
+        <div class="content">
+          <a href="images/Accessories/accessory_2.jpg">
+          <img src="images/Accessories/accessory_sm_2.jpg" style="width:100%"></a>
+          <h4>purse <img class="posh" src="images/icon.png"></h4>
+          <p>Size = medium / Bin#: 9</p>
+        </div>
+      </div> 
+      <div class="column purse">
+        <div class="content">
+          <a href="images/Accessories/accessory_4.jpg">
+          <img src="images/Accessories/accessory_sm_4.jpg" style="width:100%"></a>
+          <h4>Purse</h4>
+          <p>Size = medium / Bin#: 9</p>
+        </div>
+      </div> 
+      <div class="column purse">
+        <div class="content">
+          <a href="images/Accessories/accessory_5.jpg">
+          <img src="images/Accessories/accessory_sm_5.jpg" style="width:100%"></a>
+          <h4>Purse</h4>
+          <p>Size = medium / Bin#: 9</p>
+        </div>
+      </div> 
+      <div class="column purse posh">
+        <div class="content">
+          <a href="images/Accessories/accessory_6.jpg">
+          <img src="images/Accessories/accessory_sm_6.jpg" style="width:100%"></a>
+          <h4>Purse <img class="posh" src="images/icon.png"></h4>
+          <p>Size = medium / Bin#: 9</p>
+        </div>
+      </div> 
+     
+  
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+  </html>
