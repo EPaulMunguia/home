@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Save Web Form Data to Spreadsheets - Contact Form</title>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+<script>
+function SubForm (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/8850/',
+        type:'post',
+        data:$("#myForm").serializeArray(),
+        success: function(){
+          alert("Form Data Submitted :)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+}
+</script>
+</head>
+<body>
+  <form id="myForm">
+
+
+    <input type="text" id="myText" name="label" value="Bin_1/H12">
+    <br/>
+    <label>Location</label>
+    <br/>
+    <input type="radio" id="location" name="location" value="closet" /> Closet<br/>
+    <input type="radio" id="location" name="location" value="storage" /> Storage<br/>
+    <input type="radio" id="location" name="location" value="posh" /> Posh Mark<br/>
+    <input type="radio" id="location" name="location" value="sa" /> Salvation Army<br/>
+
+
+  </form>
+  <button onclick="SubForm()">Submit</button>
+</body>
+</html>
